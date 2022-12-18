@@ -39,7 +39,7 @@
 /data/vendor/log/audiopcm(/.*)?      u:object_r:vendor_audiopcm_data_file:s0
 /data/vendor/secure_storage(/.*)?    u:object_r:secure_storage_vendor_data_file:s0
 /data/vendor/secradio(/.*)?          u:object_r:vendor_secradio_data_file:s0
-/data/misc/radio(/.*)?               u:object_r:vendor_secradio_data_file:s0
+# /data/misc/radio(/.*)?               u:object_r:vendor_secradio_data_file:s0
 /data/oem(/.*)?			     u:object_r:vendor_patched_data_file:s0
 
 # Devices

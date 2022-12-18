@@ -25,7 +25,6 @@ genfscon sysfs /power/cpufreq_table u:object_r:sysfs_power:s0
 genfscon sysfs /devices/virtual/sensors u:object_r:sysfs_sensors:s0
 genfscon sysfs /devices/virtual/input u:object_r:sysfs_input:s0
 genfscon sysfs /devices/virtual/camera u:object_r:sysfs_camera:s0
-genfscon sysfs /class/kgsl u:object_r:sysfs_kgsl:s0
 genfscon sysfs /devices/soc/qpnp-rtc-7/rtc/rtc0 u:object_r:sysfs_rtc:s0
 genfscon sysfs /module/qpnp_power_on u:object_r:sysfs_qpnp:s0
 genfscon sysfs /devices/battery/power_supply/ u:object_r:sysfs_battery:s0
