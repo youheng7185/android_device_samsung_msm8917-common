@@ -83,6 +83,8 @@ function set_density_by_fb() {
            setprop vendor.display.lcd_density 320 #for 720X1280 resolution
         elif [ $fb_width -ge 480 ]; then
             setprop vendor.display.lcd_density 240 #for 480X854 QRD resolution
+        elif [ $fb_width -ge 540 ]; then
+            setprop vendor.display.lcd_density 240
         else
             setprop vendor.display.lcd_density 160
         fi
