@@ -21,4 +21,4 @@ PRODUCT_PACKAGES += dlopener dlopener.vendor
 PRODUCT_PACKAGES += strace
 
 # Patch elf files on-the-gn
-PRODUCT_PACKAGES += patchelf
+# PRODUCT_PACKAGES += patchelf

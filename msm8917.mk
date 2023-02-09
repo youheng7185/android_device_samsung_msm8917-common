@@ -40,7 +40,6 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
-    audio.hearing_aid.default \
     libaacwrapper \
     libqcompostprocbundle \
     libqcomvisualizer \
@@ -56,8 +55,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    com.qualcomm.qti.bluetooth_audio@1.0.vendor
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -173,8 +171,7 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm@1.0-service
 
 # FM
 PRODUCT_PACKAGES += \
@@ -284,14 +281,9 @@ ifneq ($(TARGET_DEVICE_SUPPORTS_NFC),true)
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1-service \
     com.android.nfc_extras \
-    com.gsma.services.nfc \
-    com.nxp.nfc.nq \
-    nfc_nci.nqx.default \
-    nqnfcee_access.xml \
     NfcNci \
     Tag \
-    vendor.nxp.nxpnfc@1.0 \
-    vendor.nxp.hardware.nfc@1.0-service
+    vendor.nxp.nxpnfc@1.0
     
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
@@ -367,7 +359,6 @@ PRODUCT_PACKAGES += \
     init.mdm.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
-    init.qcom.crashdata.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
@@ -379,8 +370,6 @@ PRODUCT_PACKAGES += \
     init.qti.qseecomd.sh \
     qca6234-service.sh \
     init.carrier.rc \
-    init.msm.usb.configfs.rc \
-    init.qcom.factory.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \

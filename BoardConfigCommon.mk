@@ -48,6 +48,14 @@ BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
+TARGET_KERNEL_ARCH := arm
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8917
+TARGET_KERNEL_CLANG_COMPILE := false
+TARGET_KERNEL_LLVM_BINUTILS := false
+TARGET_KERNEL_OPTIONAL_LD := true
+#TARGET_KERNEL_CLANG_VERSION := r416183b
+#TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
+#TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 ifneq ($(TARGET_DEVICE), j2y18lte)
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -56,11 +64,6 @@ BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_SEPARATED_DT := true
 # BOARD_KERNEL_CMDLINE += audit=0
 endif
-TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_SOURCE := kernel/samsung/msm8917
-TARGET_KERNEL_CLANG_COMPILE := false
-TARGET_KERNEL_LLVM_BINUTILS := false
-TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
