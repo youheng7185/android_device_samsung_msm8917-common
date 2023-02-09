@@ -62,10 +62,6 @@ TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_LLVM_BINUTILS := false
 TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
-# FM
-BOARD_HAS_QCA_FM_SOC := "cherokee"
-BOARD_HAVE_QCOM_FM := true
-
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
